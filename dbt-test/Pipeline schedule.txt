@@ -1,0 +1,7 @@
+Airflow schedule of nightly runs after Data Warehouse is updated:
+	dbt run --model tag:nightly
+	dbt snapshot --select tag:nightly
+
+
+Airflow schedule of hourly runs after Data Warehouse is updated:
+	dbt run --model tag:hourly 
